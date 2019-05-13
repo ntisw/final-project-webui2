@@ -10,6 +10,10 @@
   <meta name="author" content="">
 
   <title>Dashboard</title>
+  <!-- Script for check login status-->
+  <script src="js/cookie.js"></script>
+  <script src="js/watchman/watchman.js"></script>
+  <script src="js/watchman/action-content.js"></script>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +21,7 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  
 
 </head>
 
@@ -517,7 +522,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="index.html">Logout</a>
+          <a class="btn btn-primary" onclick="logout()" href="index.html">Logout</a>
         </div>
       </div>
     </div>
@@ -532,6 +537,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
 
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>

@@ -10,6 +10,10 @@
   <meta name="author" content="">
 
   <title>Customers</title>
+  <!-- Script for check login status-->
+  <script src="js/cookie.js"></script>
+  <script src="js/watchman/watchman.js"></script>
+  <script src="js/watchman/action-content.js"></script>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -333,7 +337,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="index.html">Logout</a>
+          <a class="btn btn-primary" onclick="logout()" href="index.html">Logout</a>
         </div>
       </div>
     </div>
@@ -355,7 +359,7 @@
  
    <!-- Page level custom scripts -->
    <script src="js/customer/customer-table.js"></script>
-   <script src="js/cookie.js"></script>
+
 
 
 </body>

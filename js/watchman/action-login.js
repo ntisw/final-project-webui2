@@ -1,0 +1,1 @@
+headerForLoginPage(getLoginStatus())
