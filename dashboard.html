@@ -270,7 +270,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">All Products</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="totalProducts"></div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" ><span id="totalProducts">0</span>&nbsp;products</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-cart-arrow-down fa-2x text-gray-300"></i>
@@ -287,7 +287,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">All Customers</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="totalCustomers"></div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" ><span id="totalCustomers">0</span>&nbsp;customers</div>
                     </div>
                     <div class="col-auto">
                       <i class="far fa-smile fa-2x text-gray-300"></i>
@@ -304,7 +304,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">All Suppliers</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="totalSuppliers"></div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800" ><span id="totalSuppliers">0</span>&nbsp;suppliers</div>
                       </div>
                       <div class="col-auto">
                         <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -321,7 +321,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">All Orders</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="totalOrders" ></div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><span id='totalOrders'>0</span>&nbsp;orders</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
@@ -403,66 +403,79 @@
               </div>
             </div>
           </div>
-
-          <!-- Content Row -->
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="h3 mb-0 text-gray-800">Three Words For This Project</h1>
-              </div>
-          <div class="row">
-
-            <!-- Content Column -->
-            <div class="col-lg-4 mb-4">
-                 <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-warning">Fun</h6>
+          <!-- Slide Three words -->
+          <div class="row justify-content-center">
+              <div class="col">
+                  <div class="card shadow mb-4">
+                    <!-- Card Header  -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Three Words For This Project</h6>
                     </div>
+                    <!-- Card Body -->
                     <div class="card-body">
-                      <div class="text-center">
-                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_game_day_ucx9.svg" alt="">
-                      </div>
-                      <p>Play Time!</p>
-                      <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="row justify-content-center">
+                                      <div class="col-md-10 ">
+                                          <img src="img/undraw_Data_points_ubvs (2).svg" class="img-fluid d-block w-100" alt="Team word">
+                                      </div>
+                                      
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <p class="display-4 text-success">Team</p>
+                                        <p class="text-success h5">Discussion Time!.</p>
+                                      </div>
+                                  </div>
+                                  
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                        <img src="img/undraw_game_day_ucx9.svg" class="img-fluid d-block w-100" alt="Fun word">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="display-4 text-warning">Fun</p>
+                                        <p class="text-warning h5">Play Time!.</p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row justify-content-center">
+                                    <div class="col-md-7">
+                                        <img src="img/undraw_Memory_storage_reh0.png" class="d-block w-100" alt="Erroneous word">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="display-4 text-primary">Erroneous</h5>
+                                        <p class="text-primary h5">Confusion Time!.</p>
+                                      </div>
+                                  </div>
+                                  
+                                  
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-success">Team</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="text-center">
-                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_Data_points_ubvs (2).svg" alt="">
-                      </div>
-                      <p>Discussion Time!</p>
-                      <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
-                    </div>
-                  </div>
-
-            </div>
-
-            <div class="col-lg-4 mb-4">
-
-              <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Erroneous</h6>
+                    <!-- End Card Body-->
+                  </div> 
                 </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_Memory_storage_reh0.png" alt="">
-                  </div>
-                  <p>Confusion Time!</p>
-                  <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
-                </div>
-              </div>
-
-            </div>
           </div>
+          
+          <!-- End Slide Three words -->
 
         </div>
         <!-- /.container-fluid -->
