@@ -9,9 +9,12 @@ $(document).ready(function() {
         if(email=='admin@nw.com'&&pass=='12345**'){
           window.location.href='dashboard.html'
         }else{
-          $('#divemail').effect('shake')
-          $('#divpass').effect('shake')
-          $('.invalid-feedback').show()
+          $('.invalid-feedback').show(0,function(){
+            $('#divemail').effect('shake')
+            $('#divpass').effect('shake')
+          })
+          
+          
         }
         $('#loginBtn').removeAttr('disabled');
         $('#labelLoading').toggleClass('sr-only');
