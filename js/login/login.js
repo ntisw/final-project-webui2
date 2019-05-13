@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.bg-login-image').css('background-image','url(https://images.pexels.com/photos/510848/pexels-photo-510848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)')
+
   $('#loginBtn').click(function(){
     $(this).attr("disabled","disabled");
     $('#labelLoading').toggleClass('sr-only');
@@ -14,8 +16,6 @@ $(document).ready(function() {
             $('#divemail').effect('shake')
             $('#divpass').effect('shake')
           })
-          
-          
         }
         $('#loginBtn').removeAttr('disabled');
         $('#labelLoading').toggleClass('sr-only');
@@ -23,6 +23,7 @@ $(document).ready(function() {
         $(this).toggle().toggleClass('sr-only');
     });
   });
+
   $('#inputEmail').keypress(function(){
     $('.invalid-feedback').hide()
   })
