@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Login</title>
+  <title>WORKSHOP 2 - Login</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Shake Effect -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
 </head>
 
@@ -39,12 +42,17 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form class="user">
-                    <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                    <div class="alert alert-danger invalid-feedback fade show" role="alert">
+                      Incorrect email or password.
                     </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                
+                  <form class="user">
+                    <div class="form-group" id="divemail">
+                      <input type="email" class="form-control form-control-user" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." required>
+                    </div>
+                    
+                    <div class="form-group" id="divpass">
+                      <input type="password" class="form-control form-control-user" id="inputPassword" placeholder="Password" required>
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -53,9 +61,10 @@
                       </div>
                     </div>
                     <hr>
-                    <a href="dashboard.html" class="btn btn-primary btn-user btn-block">
-                      Login
-                    </a>
+                    <button id="loginBtn" class="btn btn-primary btn-user btn-block">
+                        <span id="loadingStatus"class="sr-only spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;
+                      <span class="sr-only" id="labelLoading">Loading...</span><span id="labelLogin">Login</span>
+                    </button>
                   </form>
                 </div>
               </div>
@@ -76,8 +85,15 @@
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Shake Effect JavaScript-->
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="js/cookie.js"></script>
+  <!-- Script login -->
+  <script src="js/login/login.js"></script>
 
 </body>
 
