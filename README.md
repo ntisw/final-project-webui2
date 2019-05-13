@@ -1,4 +1,5 @@
 # Final Project For Class 977-290 Workshop II: Web User Interface Development
+## [demo ](https://nwtrading-nantipat-se10.netlify.com)
 ## Learning Outcomes
 - Can apply bootstrap4  for building a Web application
 ## Tasks (Individual) 
@@ -12,7 +13,6 @@
 - Mock data with JSON files (path:"/data")
 
 ### [final project outline](Project-II-2018.pdf)
-
 <hr>
 
 ## Using  [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/) theme
